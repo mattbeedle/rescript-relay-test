@@ -1,0 +1,19 @@
+[
+  {
+    "path": "/",
+    "name": "Root",
+    "children": []
+  },
+  {
+    "path": "dynamic/:item(foo|bar)",
+    "name": "DynamicBroken"
+  },
+  {
+    "path": "working/:id",
+    "name": "Working"
+  },
+  {
+    "path": "*",
+    "name": "FourOhFour"
+  }
+]
