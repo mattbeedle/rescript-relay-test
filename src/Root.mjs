@@ -2,10 +2,11 @@
 
 import * as React from "react";
 import * as RelayRouter__Link from "rescript-relay-router/src/RelayRouter__Link.mjs";
+import * as Route__DynamicBroken_route from "./routes/__generated__/Route__DynamicBroken_route.mjs";
 
 function Root(Props) {
   return React.createElement(React.Fragment, undefined, React.createElement("p", undefined, React.createElement(RelayRouter__Link.make, {
-                      to_: "/dynamic/foo",
+                      to_: Route__DynamicBroken_route.makeLink("foo"),
                       children: "A broken link"
                     })), React.createElement("p", undefined, React.createElement(RelayRouter__Link.make, {
                       to_: "/working/1",
